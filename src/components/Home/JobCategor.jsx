@@ -22,7 +22,7 @@ const JobCategory = () => {
             <div className='row mt-5'>
             {
                     categories.map((category) => <div className='col-md-3 text-center '> 
-                    <div className=' bg-light rounded p-5'>
+                    <div className=' bg-light rounded p-5 my-2'>
                         
                     <img className='img-category' src={category.image} alt="" />
                         <h2>{category.name}</h2>

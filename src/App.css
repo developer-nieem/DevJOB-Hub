@@ -13,3 +13,13 @@ a{
     height: 40px;
     border-radius: 8px;
 }
+
+.company-logo{
+    width: 150px;
+    height: 100px;
+}
+
+.icon-size{
+    width: 20px;
+    
+}

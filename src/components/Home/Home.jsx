@@ -1,6 +1,7 @@
 import React from 'react';
 import Banner from './Banner';
 import JobCategory from './JobCategor';
+import FeaturesJobs from './FeaturesJobs';
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner></Banner>
             </div>
             <JobCategory></JobCategory>
+            <FeaturesJobs></FeaturesJobs>
         </>
     );
 };
