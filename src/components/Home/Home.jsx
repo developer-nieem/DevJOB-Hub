@@ -1,11 +1,16 @@
 import React from 'react';
 import Banner from './Banner';
+import JobCategory from './JobCategor';
+
 
 const Home = () => {
     return (
-        <div className=' bg-light'>
+        < >
+            <div className=' bg-light'>
             <Banner></Banner>
-        </div>
+            </div>
+            <JobCategory></JobCategory>
+        </>
     );
 };
 

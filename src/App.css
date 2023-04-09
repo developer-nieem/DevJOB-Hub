@@ -7,3 +7,9 @@ a{
     background: #00000021;
     border-radius: 8px;
 }
+
+.img-category{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
