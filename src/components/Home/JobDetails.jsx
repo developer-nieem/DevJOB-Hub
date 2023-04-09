@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { JobsContext } from '../../App';
 import { CalendarIcon , CurrencyDollarIcon , PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/solid'
+import { addToDB } from '../../utilities/mainDB';
 
 
 const JobDetails = () => {
@@ -19,6 +20,13 @@ const JobDetails = () => {
     },[])
 
 
+    // Apply now 
+
+    const applyNow =(id) =>{
+
+      
+        addToDB(id)
+    }
 
     return (
         <div>
@@ -50,10 +58,10 @@ const JobDetails = () => {
                                 <h3 className='mt-4'>Contact Information</h3>
                                 <hr />
                                 <p><PhoneIcon  className='icon-size' />  <span className='fw-bold'>Phone:</span> {job.contactInformation.phone}</p>
-                                <p><EnvelopeIcon  className='icon-size' />  <span className='fw-bold'>Phone:</span> {job.contactInformation.email}</p>
+                                <p><EnvelopeIcon  className='icon-size' />  <span className='fw-bold'>Email:</span> {job.contactInformation.email}</p>
                                 <p><MapPinIcon  className='icon-size' />  <span className='fw-bold'>Address:</span> {job.location}</p>
                                 </div>
-                                <button className='btn btn-primary w-100 my-3'>Apply Now</button>
+                                <button onClick={() => applyNow(job.id)} className='btn btn-primary w-100 my-3'>Apply Now</button>
                         </div> )
                     }
                 </div>
