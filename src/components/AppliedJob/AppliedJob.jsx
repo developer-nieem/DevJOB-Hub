@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { JobsContext } from '../../App';
 import { getShoppingCart } from '../../utilities/mainDB';
 import { MapPinIcon , CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 const AppliedJob = () => {
 
@@ -48,7 +49,9 @@ const data  =  useContext(JobsContext)
                                 </div>
                                 </div>
                                 <div class="col-md-2  mt-5">
-                                        <button className='btn btn-primary mt-4'>View Details</button>
+                                       <Link to={`../${ap.id}`}>
+                                       <button className='btn btn-primary mt-4'>View Details</button>
+                                       </Link>
                                 </div>
                             </div>
                             </div>
