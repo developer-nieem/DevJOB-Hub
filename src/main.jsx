@@ -7,11 +7,13 @@ import Statistics from './components/Statistics/Statistics'
 import Home from './components/Home/Home'
 import AppliedJob from './components/AppliedJob/AppliedJob'
 import Blog from './components/Blog/Blog'
+import getFeatureJobs from './loaders/featuresJobs'
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <App></App>,
+    loader: getFeatureJobs,
     children: [
       {
         path:'/',
