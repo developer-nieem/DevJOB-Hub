@@ -24,7 +24,7 @@ const Statistics = () => {
     <div className="m-auto w-75 my-5">
         
         <AreaChart
-      width={1000}
+      width={800}
       height={500}
       data={data}
       margin={{
