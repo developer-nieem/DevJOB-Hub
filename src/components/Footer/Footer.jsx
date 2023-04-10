@@ -9,9 +9,9 @@ const Footer = () => {
                 <div className='col-md-4'>
                     <h1>DevJOB Hub</h1>
                     <p>There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
-                    <button className='rounded-circle fs-3 m-2 btn bg-light' > <i class="bi bi-facebook"></i>  </button>
-                    <button className='rounded-circle fs-3 m-2 btn bg-light' > <i class="bi bi-twitter"></i> </button>
-                    <button className='rounded-circle fs-3 m-2 btn bg-light' > <i class="bi bi-instagram"></i>  </button>
+                    <button className='rounded-circle fs-3 m-2 btn bg-light' > <i className="bi bi-facebook"></i>  </button>
+                    <button className='rounded-circle fs-3 m-2 btn bg-light' > <i className="bi bi-twitter"></i> </button>
+                    <button className='rounded-circle fs-3 m-2 btn bg-light' > <i className="bi bi-instagram"></i>  </button>
                 </div>
                 <div className='col-md-2 text-light'>
                     <h4>Company</h4>

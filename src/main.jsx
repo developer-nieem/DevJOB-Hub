@@ -9,16 +9,21 @@ import AppliedJob from './components/AppliedJob/AppliedJob'
 import Blog from './components/Blog/Blog'
 import getFeatureJobs from './loaders/featuresJobs'
 import JobDetails from './components/Home/JobDetails'
+import ErrorPage from './components/ErrorPage/ErrorPage'
+
+
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     loader: getFeatureJobs,
     children: [
       {
         path:'/',
-        element: <Home></Home> 
+        element: <Home></Home>,
+        
         
       },
       {
@@ -38,7 +43,8 @@ const router = createBrowserRouter([
         element: <JobDetails></JobDetails>,
       }
     ]
-  }
+    },
+      
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
