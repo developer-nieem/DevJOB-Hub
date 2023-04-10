@@ -49,7 +49,7 @@ const data  =  useContext(JobsContext)
                                 </div>
                                 </div>
                                 <div class="col-md-2  mt-5">
-                                       <Link to={`../${ap.id}`}>
+                                       <Link to={`../job/${ap.id}`}>
                                        <button className='btn btn-primary mt-4'>View Details</button>
                                        </Link>
                                 </div>

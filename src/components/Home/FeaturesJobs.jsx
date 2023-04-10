@@ -31,7 +31,7 @@ const FeaturesJobs = () => {
                 
                {
                     data > 5 ? '' : <div className='text-center my-5'>
-                    <button onClick={loadMore} className='btn btn-primary btn-lg'>Load More</button>
+                    <button onClick={loadMore} className='btn btn-primary btn-lg'>See All Jobs</button>
                     </div>
                 }
         </div>

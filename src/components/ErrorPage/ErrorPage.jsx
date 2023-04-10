@@ -16,10 +16,13 @@ const ErrorPage = () => {
             {error.error.message}
           </p>
           
-         
-          <a href="/" className="btn btn-primary">
+          <Link to='/'> 
+           <button className="btn btn-primary">
           BACK TO HOME
-          </a>
+          </button>
+           </Link>
+         
+         
           
         </div>
       </div>
