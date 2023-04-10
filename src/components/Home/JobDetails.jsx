@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import { JobsContext } from '../../App';
 import { CalendarIcon , CurrencyDollarIcon , PhoneIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/react/24/solid'
 import { addToDB } from '../../utilities/mainDB';
+import {  toast } from 'react-toastify';
 
 
 const JobDetails = () => {
@@ -23,9 +24,8 @@ const JobDetails = () => {
     // Apply now 
 
     const applyNow =(id) =>{
-
-      
-        addToDB(id)
+        addToDB(id);
+        toast("WOW , Thanks for applied !!!");
     }
 
     return (
@@ -33,6 +33,9 @@ const JobDetails = () => {
            <div className='bg-light py-5'>
            <div className='text-center py-5'>
             <h1>Job Details</h1>
+            <div className='text-start'>
+            <img className='header-vector' src="../Vector.png" alt="" />
+            </div>
            </div>
            </div>
 

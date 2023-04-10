@@ -43,6 +43,9 @@ const AppliedJob = () => {
            <div className='bg-light py-5'>
            <div className='text-center py-5'>
             <h1>Applied Jobs</h1>
+            <div className='text-start'>
+            <img className='header-vector' src="Vector.png" alt="" />
+            </div>
            </div>
            </div>
 

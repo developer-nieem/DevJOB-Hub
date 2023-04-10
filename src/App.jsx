@@ -7,6 +7,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import Header from './components/Header/Header';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export const JobsContext = createContext();
@@ -21,6 +23,7 @@ const jobs = useLoaderData()
        <Outlet></Outlet>
        <Footer></Footer>
        </JobsContext.Provider>
+       <ToastContainer></ToastContainer>
     </>
   )
 }
