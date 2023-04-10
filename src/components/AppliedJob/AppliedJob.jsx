@@ -33,7 +33,7 @@ const data  =  useContext(JobsContext)
             {
                 initialApply.map(ap=> <div className='container'>
                     
-                    <div class="card mb-3" >
+                    <div class="card my-3 " >
                             <div class="row g-0 ">
                                 <div class="col-md-2">
                                 <img src={ap.companyLogo} class="img-fluid rounded-start" alt="..." />

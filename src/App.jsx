@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.min.js";
 import Header from './components/Header/Header';
 import { Outlet, useLoaderData } from 'react-router-dom';
+import Footer from './components/Footer/Footer';
 
 
 export const JobsContext = createContext();
@@ -18,6 +19,7 @@ const jobs = useLoaderData()
        <JobsContext.Provider value={jobs}>
        <Header></Header>
        <Outlet></Outlet>
+       <Footer></Footer>
        </JobsContext.Provider>
     </>
   )
